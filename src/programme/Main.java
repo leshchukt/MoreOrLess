@@ -5,7 +5,11 @@ package programme;
  */
 public class Main {
     public static void main(String[] args) {
+
+        //initialization
         Controller controller = new Controller(new Model(), new View());
+
+        //main procedure
         controller.process();
     }
 }
