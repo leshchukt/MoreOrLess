@@ -1,7 +1,11 @@
-# folder
+
 \.idea
 \out
 \target
+
+.idea/
+out/
+target/
 
 # .iml file
 *.iml 
