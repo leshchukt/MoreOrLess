@@ -1,18 +1,18 @@
-package test;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import programme.*;
+import programme.Model;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Created by leshchuk.t on 09.11.2017.
+ * Created by leshchuk.t on 12.11.2017.
  */
-class ControllerTest {
+public class ModelTest {
+    Model model = new Model();
+
     @BeforeEach
     void setUp() {
-        Controller controller = new Controller(new Model(), new View());
+
     }
 
     @AfterEach
@@ -20,8 +20,7 @@ class ControllerTest {
     }
 
     @Test
-    void intInRange() {
-        assertEquals(2,1+1);
+    void compareTest(){
+        assertFalse(model.compare(13));
     }
-
 }
