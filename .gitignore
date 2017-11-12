@@ -1,8 +1,7 @@
 # folder
-.idea/*.xml
-
-# folder
-out/
+\.idea
+\out
+\target
 
 # .iml file
-Task 2.iml 
+*.iml 
