@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Created by leshchuk.t on 09.11.2017.
  */
+
 class ControllerTest {
     Controller controller;
     @BeforeEach
