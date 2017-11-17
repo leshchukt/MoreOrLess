@@ -34,5 +34,6 @@
     <orderEntry type="library" name="Maven: org.junit:junit5-api:5.0.0-ALPHA" level="project" />
     <orderEntry type="library" name="Maven: org.opentest4j:opentest4j:1.0.0-ALPHA" level="project" />
     <orderEntry type="library" name="Maven: org.junit:junit-commons:5.0.0-ALPHA" level="project" />
+    <orderEntry type="library" name="Maven: org.apache:apache-jar-resource-bundle:1.4" level="project" />
   </component>
 </module>

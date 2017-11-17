@@ -5,19 +5,15 @@ package programme;
  */
 public class Model {
 
-    //number constants
-    public static final int MIN_LIMIT = 0;
-    public static final int MAX_LIMIT = 100;
-
     private int key;
     private int min;
     private int max;
 
     //Constructor fill array with random numbers from 1 to 15
     public Model() {
-        key = (int) (Math.random() * MAX_LIMIT + 1);
-        min = MIN_LIMIT;
-        max = MAX_LIMIT;
+        key = (int) (Math.random() * Constants.MAX_LIMIT + 1);
+        min = Constants.MIN_LIMIT;
+        max = Constants.MAX_LIMIT;
     }
 
     //program logic

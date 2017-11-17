@@ -24,25 +24,25 @@ public class Controller {
         int maxValue = model.getMax();
         int inputValue;
 
-        view.printMessage(view.KEY_OUT + model.getKey());
+        view.printMessage(view.keyOut() + model.getKey());
 
-        view.printMessageWithLimits(minValue, maxValue);
+        view.printMessage(view.messageWithLimits(minValue, maxValue));
         inputValue = intInRange(scanner, minValue, maxValue);
         while (!model.compare(inputValue)) {
-            view.printMessage(view.NO_GUESS);
+            view.printMessage(view.noGuess());
             minValue = model.getMin();
             maxValue = model.getMax();
-            view.printMessageWithLimits(minValue, maxValue);
+            view.printMessage(view.messageWithLimits(minValue, maxValue));
             inputValue = intInRange(scanner, minValue, maxValue);
         }
-        view.printMessage(view.CONGRATULATION);
+        view.printMessage(view.congratulation());
     }
 
     //utility methods
     private int intInRange(Scanner scanner, int min, int max) {
         int result = inputInt(scanner);
         while (result > max || result < min) {
-            view.printMessage(view.WRONG_RANGE);
+            view.printMessage(view.wrongRange());
             result = inputInt(scanner);
         }
         return result;
@@ -50,7 +50,7 @@ public class Controller {
 
     private int inputInt(Scanner scanner) {
         while (!scanner.hasNextInt()) {
-            view.printMessage(view.WRONG_INPUT);
+            view.printMessage(view.wrongInput());
             scanner.next();
         }
         return scanner.nextInt();
