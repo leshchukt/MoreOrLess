@@ -18,6 +18,7 @@ public class View {
 
     //text constants
     static String WRONG_INPUT = "input.wrong.int";
+
     static String WRONG_RANGE = "input.wrong.range";
     static String KEY_OUT = "input.secret.value";
     static String NO_GUESS = "input.wrong.answer";
