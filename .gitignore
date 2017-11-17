@@ -1,7 +1,6 @@
-# folder
-/.idea
-/out
+.idea/
+out/
+target/
 
 # .iml file
 *.iml
-/target
